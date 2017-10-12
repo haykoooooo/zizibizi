@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainb"
+    tools:context="com.haykabelyan.zizibizi.MainActivity">
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_24sdp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="@dimen/_222sdp"
+            android:layout_height="wrap_content"
+            android:text="Գաղտնաբառի գեներատոր"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_13sdp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableRow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="@dimen/_222sdp"
+            android:layout_height="wrap_content"
+            android:text=" Տեքստային փոխարինիչ "
+            android:textAllCaps="false"
+            android:textSize="@dimen/_13sdp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableRow2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="@dimen/_222sdp"
+            android:layout_height="wrap_content"
+            android:text="       Հայկական ստեղնաշար       "
+            android:textAllCaps="false"
+            android:textSize="@dimen/_13sdp" />
+    </TableRow>
+</RelativeLayout>

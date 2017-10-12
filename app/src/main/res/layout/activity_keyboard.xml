@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/keyboardb"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="com.haykabelyan.zizibizi.Keyboard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
+
+                    <EditText
+                        android:id="@+id/textArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="#DDDDDD"
+                        android:fadeScrollbars="false"
+                        android:gravity="top|left"
+                        android:inputType="textMultiLine"
+                        android:lines="5"
+                        android:overScrollMode="always"
+                        android:scrollHorizontally="false"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:textSize="@dimen/_9sdp" />
+
+                    <LinearLayout
+                        android:id="@+id/kLayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textArea"
+                        android:layout_marginLeft="@dimen/_1sdp"
+                        android:layout_marginRight="@dimen/_1sdp">
+
+                        <Button
+                            android:id="@+id/buttona"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ա"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="բ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttong"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="գ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttond"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="դ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ե"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonz"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="զ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonee"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="է"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttoneee"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ը"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/kLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/kLayout1"
+                        android:layout_marginLeft="@dimen/_1sdp"
+                        android:layout_marginRight="@dimen/_1sdp">
+
+                        <Button
+                            android:id="@+id/buttonth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="թ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonzh"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ժ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttoni"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ի"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="լ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonkh"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="խ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonts"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ծ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonk"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="կ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonh"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="հ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/kLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/kLayout2"
+                        android:layout_marginLeft="@dimen/_1sdp"
+                        android:layout_marginRight="@dimen/_1sdp">
+
+                        <Button
+                            android:id="@+id/buttondz"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ձ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttongh"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ղ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttontsh"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ճ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="մ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttony"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="յ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ն"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonsh"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="շ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttono"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ո"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/kLayout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/kLayout3"
+                        android:layout_marginLeft="@dimen/_1sdp"
+                        android:layout_marginRight="@dimen/_1sdp">
+
+                        <Button
+                            android:id="@+id/buttonch"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="չ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="պ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonj"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ջ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonrr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ռ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttons"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ս"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="վ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttont"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="տ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ր"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/kLayout5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/kLayout4"
+                        android:layout_marginLeft="@dimen/_1sdp"
+                        android:layout_marginRight="@dimen/_1sdp">
+
+                        <Button
+                            android:id="@+id/buttonc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ց"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ւ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonph"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="փ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonq"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ք"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonev"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="և"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonoo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="օ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonf"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ֆ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonuu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="՚"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/kLayout6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/kLayout5"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="@dimen/_1sdp"
+                        android:layout_marginRight="@dimen/_1sdp">
+
+                        <CheckBox
+                            android:id="@+id/checkBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:text="մեծատառեր"
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <!--<CheckBox-->
+                        <!--android:id="@+id/checkBoxSystem"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:checked="false"-->
+                        <!--android:text="համակարգի ստեղնաշար"-->
+                        <!--android:textColor="#FFFFFF"-->
+                        <!--android:textSize="@dimen/_9sdp" />-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/kLayout7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/kLayout6"
+                        android:layout_marginLeft="@dimen/_1sdp"
+                        android:layout_marginRight="@dimen/_1sdp">
+
+                        <Button
+                            android:id="@+id/buttonverjaket"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=":"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonstoraket"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=","
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonket"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="."
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonharcakan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="՞"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonbacakanchakan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="՜"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonshesht"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="՛"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonbut"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="՝"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonch1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="«"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonch2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="»"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonp1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="("
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonp2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=")"
+                            android:textSize="@dimen/_9sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/kLayout8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/kLayout7"
+                        android:layout_marginLeft="@dimen/_1sdp"
+                        android:layout_marginRight="@dimen/_1sdp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/buttonenter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="նոր տող"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonspace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="20"
+                            android:text="բացատ"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <Button
+                            android:id="@+id/buttonback"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="մաքրել"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp" />
+                    </LinearLayout>
+
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/kLayout9"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@id/kLayout8"-->
+                    <!--android:layout_marginLeft="@dimen/_45sdp"-->
+                    <!--android:layout_marginRight="@dimen/_45sdp"-->
+                    <!--android:layout_marginTop="@dimen/_1sdp">-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Այլ լեզվով գրելու համար ակտիվացրեք «համակարգի ստեղնաշար» վանդակը"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:textColor="#FFFFFF"-->
+                    <!--android:textSize="@dimen/_9sdp" />-->
+                    <!--</LinearLayout>-->
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>
